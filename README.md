@@ -7,6 +7,7 @@ Overview
 
 Create an Amazon-like storefront with the MySQL skills you learned this unit. The app will take in orders from customers and deplete stock from the store's inventory. As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
 Make sure you save and require the MySQL and Inquirer npm packages in your homework files--your app will need them for data input and storage.
+__________________________________________________
 
 Challenge #1: Customer View (Minimum Requirement)
 __________________________________________________
@@ -27,6 +28,7 @@ price (cost to customer)
 stock_quantity (how much of the product is available in stores)
 
 
+__________________________________________________
 
 Challenge #2: Manager View (Next Level)
 __________________________________________________
@@ -38,6 +40,7 @@ If a manager selects Add to Inventory, your app should display a prompt that wil
 
 If a manager selects Add New Product, it should allow the manager to add a completely new product to the store.
 
+__________________________________________________
 
 Challenge #3: Supervisor View (Final Level)
 __________________________________________________
