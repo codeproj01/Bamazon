@@ -53,3 +53,39 @@ department_id
 department_name
 
 over_head_costs (A dummy number you set for each department)
+__________________________________________________
+
+![Alt text](./img/bamazoncustomer1.jpg?raw=true).
+```
+At the terminals command prompt, type "node bamazonCustomer" (See screenshot example below:).
+```
+![Alt text](./img/bamazonCustomer2.jpg?raw=true ).
+```
+At the terminals command prompt, type "node bamazonCusutomer show list of merchandize when you select no to continue" (See screenshot example below:).
+```
+![Alt text](./img/bamazoncustomer3.jpg?raw=true).
+```
+At the terminals command prompt, type "node bamazonManager" To see a list of selections for manager.
+``` 
+![Alt text](./img/bamazonManager1.jpg?raw=true).
+```
+At the terminals select prompt, type "view product sales".
+```
+![Alt text](./img/bamazonmanger2.jpg?raw=true).
+```
+At the terminals select prompt, type "view low inventory".
+```
+![Alt text](./img/bamazonManager3.jpg?raw=true).
+```
+At the terminals select prompt, type "Add to Inventory".
+```
+![Alt text](./img/bamazonmanger4.jpg?raw=true).
+
+At the terminals select prompt, type "Add New Product". 
+Program will default to "Cardi. B". (See screenshot example below:).
+```
+![Alt text](./img/bamazonManager5.jpg?raw=true).
+
+At the terminals command prompt, type "node bamazonSupervisor".
+```
+![Alt text](./img/bamazonSupervisor1.jpg?raw=true).
