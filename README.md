@@ -91,9 +91,9 @@ At the terminals command prompt, type "node bamazonSupervisor".
 
 # TECHNOLOGIES USED.
    ### Javascript.
-    Nodejs.
-    Node packages:.
-    mysql.
-    inquirer.
-    console.table.
-    cli-table. 
+    ### Nodejs.
+    ### Node packages:.
+    ### mysql.
+    ### inquirer.
+    ### console.table.
+    ### cli-table. 
