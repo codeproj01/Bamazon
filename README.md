@@ -71,7 +71,7 @@ At the terminals command prompt, type "node bamazonManager" To see a list of sel
 ```
 At the terminals select prompt, "view product sales".
 ```
-![Alt text](./img/bamazonmanger2.jpg?raw=true).
+![Alt text](./img/bamazonmanager2.jpg?raw=true).
 ```
 At the terminals select prompt, "view low inventory".
 ```
@@ -79,7 +79,7 @@ At the terminals select prompt, "view low inventory".
 ```
 At the terminals select prompt, "Add to Inventory".
 ```
-![Alt text](./img/bamazonmanger4.jpg?raw=true).
+![Alt text](./img/bamazonmanager4.jpg?raw=true).
 ```
 At the terminals select prompt, "Add New Product". 
 ```
@@ -87,4 +87,4 @@ At the terminals select prompt, "Add New Product".
 ```
 At the terminals command prompt, type "node bamazonSupervisor".
 ```
-![Alt text](./img/bamazonSupervisor1.jpg?raw=true).
+![Alt text](./img/bamazonSupvisor1.jpg?raw=true).
