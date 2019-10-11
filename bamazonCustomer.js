@@ -100,10 +100,11 @@ function shopForMoreProducts () {
                      colWidths: [10, 20, 25, 8, 15, 15]
                     }
                  );
-                 for (let i = 0; i < results.length; i++){
-                    table.push([results[i].item_id, results[i].product_name, results[i].department_name, results[i].price, results[i].stock_quantity, results[i].product_sales])
-                }
-                console.log(table.toString());
+                // for (let i = 0; i < results.length; i++){
+                //    table.push([results[i].item_id, results[i].product_name, results[i].department_name, results[i].price, results[i].stock_quantity, results[i].product_sales])
+                //}
+                //console.log(table.toString());
+                console.table(results);
             });
             console.log("Inventory of Merchandize!");
 	    console.log("Thank You!!  Good Bye!!!");
