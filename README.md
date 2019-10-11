@@ -59,7 +59,7 @@ __________________________________________________
 ```
 At the terminals command prompt, type "node bamazonCustomer" (See screenshot example below:).
 ```
-![Alt text](./img/bamazonCustomer2.jpg?raw=true ).
+![Alt text](./img/bamazonCustomer2.jpg?raw=true).
 ```
 At the terminals command prompt, type "node bamazonCusutomer" shows list of merchandize when you select no to continue.
 ```
@@ -69,20 +69,19 @@ At the terminals command prompt, type "node bamazonManager" To see a list of sel
 ``` 
 ![Alt text](./img/bamazonManager1.jpg?raw=true).
 ```
-At the terminals select prompt, type "view product sales".
+At the terminals select prompt, "view product sales".
 ```
 ![Alt text](./img/bamazonmanger2.jpg?raw=true).
 ```
-At the terminals select prompt, type "view low inventory".
+At the terminals select prompt, "view low inventory".
 ```
 ![Alt text](./img/bamazonManager3.jpg?raw=true).
 ```
-At the terminals select prompt, type "Add to Inventory".
+At the terminals select prompt, "Add to Inventory".
 ```
 ![Alt text](./img/bamazonmanger4.jpg?raw=true).
 ```
-At the terminals select prompt, type "Add New Product". 
-Program will default to "Cardi. B". (See screenshot example below:).
+At the terminals select prompt, "Add New Product". 
 ```
 ![Alt text](./img/bamazonManager5.jpg?raw=true).
 ```
