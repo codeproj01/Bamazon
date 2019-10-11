@@ -1,6 +1,7 @@
 const Table = require("cli-table");
 const mysql = require("mysql");
 const inquirer = require ("inquirer");
+//let table = require('console.table');
 
 const connection = mysql.createConnection({
     host: "localhost",
@@ -68,13 +69,13 @@ function supervisorsViewOfSales() {
         if (err) throw err;
         
         let table = new Table({
-           head: ["department_id", "department_name", "over_head_costs", "products_sales", "total_profits"]
-            //head: ["department_id", "department_name", "over_head_costs", "total_sales_by_Dept", "profit"]
+            head: ["department_id", "department_name", "over_head_costs", "total_sales_by_Dept", "profit"]
         });
         
-        for (let i = 0; i < res.length; i++) {
-            table.push([res[i].department_id, res[i].department_name, res[i].over_head_costs, res[i].product_sales, res[i].total_profit])
-        }
-        console.log(table.toString());
+        //for (let i = 0; i < res.length; i++) {
+        //    table.push([res[i].department_id, res[i].department_name, res[i].over_head_costs, res[i].total_sales_by_Dept, res[i].Profit])
+        //};
+        //console.log(table.toString());
+        console.table(res);
     })
 }

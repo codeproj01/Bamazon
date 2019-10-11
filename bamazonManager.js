@@ -27,16 +27,16 @@ function initManagerChoices() {
     ]).then(function (answer) {
         switch (answer.option) {
             case "View Products for Sale":
-                choice.viewProductsForSale();
+                bamazon.viewProductsForSale();
                 break;
             case "View Low Inventory":
-                choice.viewLowInventory();
+                bamazon.viewLowInventory();
                 break;
             case "Add to Inventory":
-                choice.showInventory();
+                bamazon.showInventory();
                 break;
             case "Add New Product":
-                choice.addProduct();
+                bamazon.addProduct();
                 break;
             default:
                 console.log("Exiting!");
@@ -46,7 +46,7 @@ function initManagerChoices() {
     })
 };
 
-let choice = {
+let bamazon = {
     viewProductsForSale: function () {
         connection.query("SELECT * FROM products", function (err, res) {
             if (err) throw err;
@@ -61,7 +61,7 @@ let choice = {
             console.log(table.toString());
         });
     },
-    viewLowInventory: function (){
+        viewLowInventory: function (){
         connection.query("SELECT * FROM products WHERE stock_quantity < 3", function (err, res) {
             if (err) throw err;
 
@@ -76,7 +76,7 @@ let choice = {
 
             })
     },
-    addProduct: function () {
+        addProduct: function () {
         inquirer.prompt([
             {
                 name: "item",
@@ -108,7 +108,7 @@ let choice = {
                 })
         })
     },
-    addInventory: function () {
+        addInventory: function () {
 
 
         inquirer.prompt([
@@ -132,18 +132,20 @@ let choice = {
             
                 let newTotal = parseInt(res[0].stock_quantity) + parseInt(answer.quantityFromUserInput);
                 console.log("\nNew Quantity is now " + newTotal);
-                choice.updateInventory(answer.product, newTotal);
+                bamazon.updateInventory(answer.product, newTotal);
+                quantity = newTotal;
             })
         })
     },
-    updateInventory: function (product, quantity) {
-        connection.query("UPDATE products SET stock_quantity=? WHERE product_name=?", [quantity, product], function (err, res) {
+        updateInventory: function (product, quantity) {
+            console.log("product id: " + product, "new quantity: " + quantity);
+        connection.query("UPDATE products SET stock_quantity=? WHERE item_id=?", [quantity, product], function (err, res) {
             if (err) throw err;
             console.log("Inventory updated successfully!");
         })
 
     },
-    showInventory: function(){
+        showInventory: function(){
              connection.query("SELECT * FROM products", function (err, res) {
             if (err) throw err;
             
@@ -155,10 +157,11 @@ let choice = {
                 table.push([res[i].item_id, res[i].product_name, res[i].price, res[i].stock_quantity])
             };
             console.log(table.toString());
-            choice.addInventory();
+            bamazon.addInventory();
         });
         
     }
+
 }
 
 initManagerChoices();
