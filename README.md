@@ -90,10 +90,10 @@ At the terminals command prompt, type "node bamazonSupervisor".
 ![Alt text](./img/bamazonSupvisor1.jpg?raw=true).
 
 # TECHNOLOGIES USED.
-   ### Javascript.
-    ### Nodejs.
-    ### Node packages:.
-    ### mysql.
-    ### inquirer.
-    ### console.table.
-    ### cli-table. 
+    ** Javascript. **
+    ** Nodejs. **
+    ** Node packages:. **
+    ** mysql. **
+    ** inquirer. **
+    ** console.table. **
+    ** cli-table. ** 
