@@ -88,7 +88,7 @@ At the terminals select prompt, "Add New Product".
 At the terminals command prompt, type "node bamazonSupervisor".
 ```
 ![Alt text](./img/bamazonSupvisor1.jpg?raw=true).
-```
+
 TECHNOLOGIES USED.
 =======================
     Javascript.
