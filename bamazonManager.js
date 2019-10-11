@@ -80,19 +80,19 @@ let bamazon = {
         inquirer.prompt([
             {
                 name: "item",
-                message: "What new product would you like to add?"
+                message: "Add a new Product"
             },
             {
-                name: "dept",
-                message: "What department does this belong in?"
+                name: "department",
+                message: "Enter department name the product is for?"
             },
             {
                 name: "price",
-                message: "What is the price of this item?"
+                message: "Enter the price of this item"
             },
             {
                 name: "quantity",
-                message: "How many would you like to order?"
+                message: "Enter the number of items to order"
             }
         ]).then(function (answer) {
             connection.query("INSERT INTO products SET ?",
@@ -114,11 +114,11 @@ let bamazon = {
         inquirer.prompt([
             {
                 name: "product",
-                message: "For which product would you like to order more inventory?"
+                message: "Enter product id of product you would like to order more inventory?"
             },
             {
                 name: "quantityFromUserInput",
-                message: "How many more would you like to order?",
+                message: "How many more of this product would you like to order?",
                 validate: function(value) {
                     if (isNaN(value) === false) {
                         return true;
@@ -141,7 +141,7 @@ let bamazon = {
             console.log("product id: " + product, "new quantity: " + quantity);
         connection.query("UPDATE products SET stock_quantity=? WHERE item_id=?", [quantity, product], function (err, res) {
             if (err) throw err;
-            console.log("Inventory updated successfully!");
+            console.log("Inventory has been updated successfully!");
         })
 
     },

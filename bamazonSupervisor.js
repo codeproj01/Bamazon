@@ -19,7 +19,7 @@ inquirer.prompt([
     {
         type: "list",
         name: "optionForSupervisor",
-        message:"Select your choice",
+        message:"Please select your choice",
         choices: ["View Product Sales by Department", "Create New Department"]
     }
 ]).then(function(answers){
